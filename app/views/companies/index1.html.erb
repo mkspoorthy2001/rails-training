@@ -1,0 +1,45 @@
+<h1 style="text-align:center;">Company Table</h1>
+<h2 style= "text-align:center;">
+<%= paginate @companies %></h2>
+<h2 style="text-align:center;"> <%= link_to "User Table", tables_path%></h2>
+<h2 style="text-align:center;"> <%= link_to "Role Table", companies_path%></h2>
+<style>
+table, th, td { 
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+</style>
+<table align = "center">
+ <thead>
+  <tr>
+    <th> Comp_ID </th>
+    <th> C_name</th>
+    <th>  No_of_employees</th>
+    <th> Address </th>
+    <th> Dept_name </th>
+    <th> Phone_number </th>
+  </tr>
+ </thead>
+
+
+
+<tbody>
+
+<ul>
+<% @companies.each do |company| %>
+    <tr>
+    <td><%= company.comp_id %></td>
+    <td><%= company.company_name %></td>
+    <td><%= company.no_of_employees %></td>
+    <td><%= company.address %></td>
+    <td><%= company.dept_name%></td>
+    <td><%= company.phone_number %></td>
+    </tr>
+
+    <% end%>
+</tbody>
+</table>

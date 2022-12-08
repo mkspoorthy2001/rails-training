@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  R_ID: 1
+  Project_name: MyText
+  Role_name: MyText
+  Role_code: MyText
+
+two:
+  R_ID: 1
+  Project_name: MyText
+  Role_name: MyText
+  Role_code: MyText

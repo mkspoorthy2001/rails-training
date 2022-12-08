@@ -1,0 +1,47 @@
+
+
+<h1 style="text-align:center;">Role Table</h1>
+<h2 style="text-align:center;"> <%= link_to "User Table", tables_path%></h2>
+<h2 style="text-align:center;"> <%= link_to "Company Table", companies_path%></h2>
+<h2 style= "text-align:center;">
+<%= paginate @roles %></h2>
+
+<style>
+table, th, td { 
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+</style>
+<table align = "center">
+ <thead>
+
+  <tr>
+    <th> R_ID </th>
+    <th> Project_name </th>
+    <th> Role_name</th>
+    <th>  Role_code</th>
+    
+  </tr>
+ </thead>
+
+
+
+<tbody>
+
+<ul>
+<% @roles.each do |role| %>
+    <tr>
+    <td><%= role.r_id %></td>
+    <td><%= role.project_name %></td>
+    <td><%= role.role_name %></td>
+    <td><%= role.role_code %></td>
+    
+    </tr>
+
+    <% end%>
+</tbody>
+</table>

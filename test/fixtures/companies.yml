@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Comp_ID: 1
+  C_name: MyString
+  No_of_employees: 1
+  Address: MyText
+  Dept_name: MyText
+  Phone_number: 1
+
+two:
+  Comp_ID: 1
+  C_name: MyString
+  No_of_employees: 1
+  Address: MyText
+  Dept_name: MyText
+  Phone_number: 1

@@ -1,0 +1,46 @@
+<h1 style = "text-align:center;"> Search Results </h1>
+
+    <style>
+table, th, td { 
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+</style>
+<table align = "center">
+
+ <thead>
+ 
+  <tr>
+    <th> Company_ID </th>
+    <th> Role_ID </th>
+    <th> First_name </th>
+    <th> Last_name </th>
+    <th> Email </th>
+    <th> Age </th>
+    <th> Gender </th>
+    <th> Country </th> 
+  </tr>
+ </thead>
+
+ <tbody>
+
+<ul>
+<% @results.each do |result| %>
+    <tr>
+    <td><%= result.company_id %></td>
+    <td><%= result.role_id %></td>
+    <td><%= result.first_name %></td>
+    <td><%= result.last_name %></td>
+    <td><%= result.email %></td>
+    <td><%= result.age %></td>
+    <td><%= result.gender %></td>
+    <td><%= result.country %></td>
+    </tr>
+
+    <% end%>
+</tbody>
+<h2 style = "text-align:center;"><%= paginate @results %><h2
+</table>
