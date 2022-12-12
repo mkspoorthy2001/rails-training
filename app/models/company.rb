@@ -1,6 +1,6 @@
 class Company < ApplicationRecord
     paginates_per 10
-    # belongs_to :table
+    # belongs_to :table#, :foreign_key => "user_id"
 
     
     

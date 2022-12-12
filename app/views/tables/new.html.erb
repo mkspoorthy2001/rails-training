@@ -1,0 +1,53 @@
+<center>
+<h1 style= "text-align: center;"> New Entry </h1>
+
+<%= form_for @table, url: tables_path, method: :post, class: "btn-submit" do |form| %>
+  <div>
+    <%= form.label :company_id %><br>
+    <%= form.number_field :company_id%>
+  </div>
+  <div>
+  <%= form.label :role_id %><br>
+  <%= form.number_field :role_id%>
+</div>
+<div>
+<%= form.label :first_name %><br>
+<%= form.text_field :first_name%>
+</div>
+
+<div>
+<%= form.label :last_name %><br>
+<%= form.text_field :last_name%>
+</div>
+
+<div>
+<%= form.label :email %><br>
+<%= form.email_field :email%>
+</div>
+<div>
+<%= form.label :age %><br>
+<%= form.number_field :age%>
+</div>
+<div>
+<%= form.label :gender %><br>
+<%= form.text_field :gender%>
+</div>
+<div>
+<%= form.label :country %><br>
+<%= form.text_field :country %>
+</div>
+
+<div>
+<%= form.label :user_id %><br>
+<%= form.number_field :user_id%>
+</div>
+
+<%= form.submit%>
+
+<% end %>
+
+</center>
+
+<p style = "text-align: center;">
+<%= link_to "Users", tables_path, class: "btn btn-primary"%>
+</p>

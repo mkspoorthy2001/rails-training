@@ -28,6 +28,8 @@ tr:nth-child(even) {
     <th> Age </th>
     <th> Gender </th>
     <th> Country </th> 
+    <th> User_ID </th>
+   
   </tr>
  </thead>
 
@@ -47,10 +49,18 @@ tr:nth-child(even) {
     <td><%= table.age %></td>
     <td><%= table.gender %></td>
     <td><%= table.country %></td>
+    <td><%= table.user_id %></td>
+  
     </tr>
-
     <% end%>
+
+
+    
 </tbody>
 </table>
+
+<p style = "text-align: center;">
+  <%= link_to "Add New Entry", new_table_path, class: "btn btn-primary" %>
+</p>
 
 
